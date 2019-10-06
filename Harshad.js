@@ -22,19 +22,25 @@
 // 입출력 예 #4
 // 13의 모든 자릿수의 합은 4입니다. 13은 4로 나누어 떨어지지 않으므로 13은 하샤드 수가 아닙니다.
 
-// # 1st solution(final)
+// # 1st solution
 
-function solution(x) {
-  var answer = (x + "") // type conversion(to string), if x is not string? can't use split()
-    .split("")
-    .reduce((acc, curVal) => parseInt(acc) + parseInt(curVal));
+// function solution(x) {
+//   var answer = (x + "") // type conversion(to string), if x is not string? can't use split()
+//     .split("")
+//     .reduce((acc, curVal) => parseInt(acc) + parseInt(curVal));
 
-  return x % answer === 0;
+//   return x % answer === 0;
+// }
+
+// # 2nd solution(final)
+
+function Hashad(n) {
+  return !(n % (n + "").split("").reduce((acc, curVal) => +acc + +curVal));
 }
 
-console.log(solution(12));
+console.log(Hashad(12));
 
 // # split, reduce, type conversion(parseInt)
 // str.split([separator[, limit]])
 // arr.reduce(callback(accumulator, currentValue[, index[, array]])[, initialValue])
-// parseInt(string, radix);
+// parseInt(string, radix) Or +variables
