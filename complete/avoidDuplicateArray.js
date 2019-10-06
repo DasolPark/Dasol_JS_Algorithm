@@ -1,3 +1,4 @@
+// 같은 숫자는 싫어
 // 문제 설명
 // 배열 arr가 주어집니다. 배열 arr의 각 원소는 숫자 0부터 9까지로 이루어져 있습니다. 이때, 배열 arr에서 연속적으로 나타나는 숫자는 하나만 남기고 전부 제거하려고 합니다. 단, 제거된 후 남은 수들을 반환할 때는 배열 arr의 원소들의 순서를 유지해야 합니다. 예를 들면,
 // arr = [1, 1, 3, 3, 0, 1, 1] 이면 [1, 3, 0, 1] 을 return 합니다.
@@ -15,26 +16,50 @@
 // 입출력 예 #1,2
 // 문제의 예시와 같습니다.
 
+// # 1st solution
+
+// function solution(arr) {
+//   var answer = [];
+//   var p = 0;
+//   var q = 0;
+//   var arrArr = arr;
+//   var temp = [];
+//   var i = 0;
+//   var j = 0;
+
+//   for (i = 0; i <= arrArr.length; i++) {
+//     p = arrArr[i];
+//     q = arrArr[i + 1];
+
+//     if (p != q) {
+//       temp[j] = p;
+//       j++;
+//     }
+//   }
+//   answer = temp;
+//   return answer;
+// }
+
+// # 2 solution(Final)
+
 function solution(arr) {
-  var answer = [];
-  var p = 0;
-  var q = 0;
-  var arrArr = arr;
-  var temp = [];
-  var i = 0;
-  var j = 0;
-
-  for (i = 0; i <= arrArr.length; i++) {
-    p = arrArr[i];
-    q = arrArr[i + 1];
-
-    if (p != q) {
-      temp[j] = p;
-      j++;
-    }
-  }
-  answer = temp;
-  return answer;
+  return arr.filter((element, index, arr) => element !== arr[index + 1]);
 }
 
 console.log(solution([1, 1, 3, 3, 0, 1, 1]));
+
+// [Syntax] var newArray = arr.filter(callback(element[, index[, array]])[, thisArg])
+
+// # Another solution
+
+// function solution(arr) {
+//   var answer = [arr[0]];
+
+//   for (let i=1; i<arr.length; i++) {
+//       if (answer[answer.length - 1] !== arr[i]) {
+//           answer.push(arr[i]);
+//       }
+//   }
+
+//   return answer;
+// }

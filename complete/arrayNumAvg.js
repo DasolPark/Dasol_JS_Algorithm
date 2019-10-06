@@ -7,18 +7,32 @@
 // [1,2,3,4]	2.5
 // [5,5]	5
 
+// # 1st solution
+
+// function solution(arr) {
+//   var answer = 0;
+//   var i = 0;
+//   var total = 0;
+//   var result = 0;
+
+//   for (i = 0; i < arr.length; i++) {
+//     total += arr[i];
+//   }
+
+//   answer = total / arr.length;
+//   return answer;
+// }
+
+// # 2nd solution(Final)
+
 function solution(arr) {
   var answer = 0;
-  var i = 0;
-  var total = 0;
-  var result = 0;
 
   for (i = 0; i < arr.length; i++) {
-    total += arr[i];
+    answer += arr[i];
   }
 
-  answer = total / arr.length;
-  return answer;
+  return answer / arr.length;
 }
 
-console.log(solution([1, 2]));
+console.log(solution([1, 2, 3, 4]));
