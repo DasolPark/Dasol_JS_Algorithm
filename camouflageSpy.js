@@ -53,25 +53,40 @@
 
 // # another solution
 
+// function solution(clothes) {
+//   return (
+//     Object.values(
+//       clothes.reduce((obj, t) => {
+//         obj[t[1]] = obj[t[1]] ? obj[t[1]] + 1 : 1;
+//         return obj;
+//       }, {})
+//     ).reduce((a, b) => a * (b + 1), 1) - 1
+//   );
+// }
+
+// # 개념 설명
+// ((첫번 째 부위 의상 개수 + 1) * (두 번째 부위 의상 개수 +1)...) -1
+// 의상 개수에 +1을 해주는 것은 해당 부의 의상을 입지 않았을 사건을 고려(partial)
+// 마지막에 -1을 빼주는 것은 아무것도 입지 않았을 사건을 제외(naked)
+
+// # 3rd Solution(final)
+
 function solution(clothes) {
   return (
     Object.values(
-      clothes.reduce((obj, t) => {
-        obj[t[1]] = obj[t[1]] ? obj[t[1]] + 1 : 1;
+      clothes.reduce((obj, dressType) => {
+        obj[dressType[1]] = obj[dressType[1]] ? obj[dressType[1]] + 1 : 1;
         return obj;
       }, {})
-    ).reduce((a, b) => a * (b + 1), 1) - 1
+    ).reduce((accumulate, dressTypeNum) => accumulate * (dressTypeNum + 1), 1) -
+    1
   );
 }
 
 console.log(
   solution([
     ["crow_mask", "face"],
-    ["blue_sunglasses", "face"],
+    ["blue_sunglasses", "eyes"],
     ["smoky_makeup", "face"]
   ])
 );
-
-// ((첫번 째 부위 의상 개수 + 1) * (두 번째 부위 의상 개수 +1)...) -1
-// 의상 개수에 +1을 해주는 것은 해당 부의 의상을 입지 않았을 사건을 고려(partial)
-// 마지막에 -1을 빼주는 것은 아무것도 입지 않았을 사건을 제외(naked)
