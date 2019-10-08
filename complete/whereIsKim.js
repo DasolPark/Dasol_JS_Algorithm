@@ -27,18 +27,26 @@
 //   return answer;
 // }
 
-// # 2nd solution(Final)
+// # 2nd solution
 
-function solution(seoul) {
-  var answer = 0;
+// function solution(seoul) {
+//   var answer = 0;
 
-  for (var i = 0; i < seoul.length; i++) {
-    if (seoul[i] === "Kim") {
-      return (answer = `김서방은 ${i}에 있다`);
-    }
+//   for (var i = 0; i < seoul.length; i++) {
+//     if (seoul[i] === "Kim") {
+//       return (answer = `김서방은 ${i}에 있다`);
+//     }
+//   }
+
+//   return answer;
+// }
+
+// # 3rd solution(final)
+
+function solution(arr) {
+  for (var i = 0; i < arr.length; i++) {
+    if (arr[i] === "Kim") return `김서방은 ${i}에 있다`;
   }
-
-  return answer;
 }
 
 console.log(solution(["Jane", "Dasol", "Judy", "Kim"]));
