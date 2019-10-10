@@ -41,12 +41,19 @@
 //   return answer;
 // }
 
-// # 3rd solution(final)
+// # 3rd solution
 
-function solution(arr) {
-  for (var i = 0; i < arr.length; i++) {
-    if (arr[i] === "Kim") return `김서방은 ${i}에 있다`;
-  }
+// function solution(arr) {
+//   for (var i = 0; i < arr.length; i++) {
+//     if (arr[i] === "Kim") return `김서방은 ${i}에 있다`;
+//   }
+// }
+
+// # 4th solution(final)
+
+function solution(seoul) {
+  const idx = seoul.indexOf("Kim");
+  return `김서방은 ${idx}에 있다`;
 }
 
 console.log(solution(["Jane", "Dasol", "Judy", "Kim"]));
