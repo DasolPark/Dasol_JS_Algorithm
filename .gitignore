@@ -14,5 +14,9 @@ String.prototype.split()
 String.prototype.substr()
 String.prototype.indexOf()
 Math.ceil()
+Math.abs()
+Math.min()
+Math.max()
+convert type(such as string to num Or num to string)
 
 # 1. 중복되는 것이 보인다? 줄일 수 있을 것이다.
