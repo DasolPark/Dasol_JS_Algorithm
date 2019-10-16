@@ -32,11 +32,20 @@
 //   return result;
 // }
 
+// # 2nd solution(ds-final)
+
+function solution(a, b) {
+  let result = 0;
+  for (i = Math.min(a, b); i <= Math.max(a, b); i++) result += i;
+  return result;
+}
+
 // # other solution
 
-function adder(a, b) {
-  return ((a + b) * (Math.abs(b - a) + 1)) / 2;
-}
+// function solution(a, b) {
+//   return ((a + b) * (Math.abs(b - a) + 1)) / 2;
+// }
+
 // ((첫 번째 수 + 맨 끝 수) * 총 더할 수의 개수)/2
 // 3+5=8, 5-3+1=3, 8*3=24, 24/2=12;
 // 3+3=6, 3-3+1=1, 6*1=6, 6/2=3;
