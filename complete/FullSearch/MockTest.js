@@ -57,18 +57,18 @@
 //# other solution
 
 function solution(answers) {
-  var answer = [];
-  var su1 = [1, 2, 3, 4, 5];
-  var su2 = [2, 1, 2, 3, 2, 4, 2, 5];
-  var su3 = [3, 3, 1, 1, 2, 2, 4, 4, 5, 5];
+  let answer = [];
+  let su1 = [1, 2, 3, 4, 5];
+  let su2 = [2, 1, 2, 3, 2, 4, 2, 5];
+  let su3 = [3, 3, 1, 1, 2, 2, 4, 4, 5, 5];
 
-  var su1Result = answers.filter((val, idx) => val === su1[idx % su1.length])
+  let su1Result = answers.filter((val, idx) => val === su1[idx % su1.length])
     .length;
-  var su2Result = answers.filter((val, idx) => val === su2[idx % su2.length])
+  let su2Result = answers.filter((val, idx) => val === su2[idx % su2.length])
     .length;
-  var su3Result = answers.filter((val, idx) => val === su3[idx % su3.length])
+  let su3Result = answers.filter((val, idx) => val === su3[idx % su3.length])
     .length;
-  var max = Math.max(a1c, a2c, a3c);
+  let max = Math.max(a1c, a2c, a3c);
 
   if (su1Result === max) answer.push(1);
   if (su2Result === max) answer.push(2);
