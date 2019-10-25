@@ -10,11 +10,12 @@ Array.prototype.forEach()
 Array.prototype.filter(callback(element[, index[, array]])[, thisArg]) # for + if + push
 Array.prototype.reduce()
 Array.prototype.sort()
-Array.prototype.shift()
+Array.prototype.shift() # removes the first element from an array and returns that removed element
 Array.prototype.slice()
 Array.prototype.splice()
 Array.prototype.join()
 Array.prototype.reverse()
+Array.prototype.includes(valueToFind[, fromIndex])
 String.prototype.split()
 String.prototype.substr(start[, length]) # but, deprecated(but, priority)
 String.prototype.substring(indexStart, indexEnd)) # (start, End+1)
@@ -31,5 +32,6 @@ Number.isNaN(value) #whether NaN and Number (Not a Number)
 isNaN(value) # NaN or not (difference: isNaN implicitly converts the arguments to a number)
 convert type(such as string to num Or num to string) IntToStr( number + '' ) strToInt( str / 1 )
 Regular Expressions
+continue
 
 # 1. 중복되는 것이 보인다? 줄일 수 있을 것이다.
