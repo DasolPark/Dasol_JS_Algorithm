@@ -32,4 +32,16 @@ function solution(num) {
   );
 }
 
+// # 2nd solution(ds)
+
+// function solution(num) {
+//   return (
+//     (num + '')
+//       .split('')
+//       .sort((a, b) => a - b)
+//       .reverse()
+//       .join('') / 1
+//   );
+// }
+
 console.log(solution(118372));
