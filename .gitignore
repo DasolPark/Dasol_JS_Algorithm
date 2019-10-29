@@ -2,6 +2,7 @@ GearIndexOf.js
 testt.js
 # https://www.acmicpc.net/problem/1102
 powerPlant.js
+targetNumber.js
 
 Object.values()
 Array.prototype.map()
