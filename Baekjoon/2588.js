@@ -1,3 +1,5 @@
+// Multiplication Q.2588
+
 const a = 472;
 const b = 385;
 
