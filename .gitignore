@@ -24,6 +24,7 @@ String.prototype.substr(start[, length]) # but, deprecated(but, priority)
 String.prototype.substring(indexStart, indexEnd)) # (start, End+1)
 String.prototype.indexOf(searchElement[, fromIndex])
 String.prototype.replace(regexp|substr, newSubstr|function)
+String.prototype.trim() // removes whitespaces
 Math.ceil()
 Math.abs()
 Math.min()
