@@ -1,6 +1,9 @@
-GearIndexOf.js
 testt.js
 # https://www.acmicpc.net/problem/1102
+
+# 10818.js (minMax)
+# Leap Year(BJ Q.2884)
+GearIndexOf.js
 powerPlant.js
 targetNumber.js
 2020KAKAO_Winter_Intern
@@ -45,4 +48,3 @@ continue
 # var a = parseInt(input[0]);
 # var b = parseInt(input[1]);
 
-# Leap Year(BJ Q.2884)
