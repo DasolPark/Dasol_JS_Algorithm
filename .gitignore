@@ -10,6 +10,7 @@ targetNumber.js
 2020KAKAO_Winter_Intern
 2019Midas
 
+Function.prototype.apply()
 Object.values()
 Array.prototype.map()
 Array.prototype.some()
@@ -36,6 +37,7 @@ Math.max()
 Number(value)
 Number.isInteger(value)
 Number.parseInt(value)
+Number.prototype.toFixed()
 Number.isNaN(value) #whether NaN and Number (Not a Number)
 isNaN(value) # NaN or not (difference: isNaN implicitly converts the arguments to a number)
 convert type(such as string to num Or num to string) IntToStr( number + '' ) strToInt( str / 1 )
@@ -44,8 +46,11 @@ continue
 
 # 1. 중복되는 것이 보인다? 줄일 수 있을 것이다.
 
+# For Baekjoon Algorithm
+
 # var fs = require('fs');
-# var input = fs.readFileSync('/dev/stdin').toString().split('\n'); Or split(' ');
+# var input = fs.readFileSync('/dev/stdin').toString().split('\n'); Or split(' '); Or toString().trim().split('\n');
 # var a = parseInt(input[0]);
 # var b = parseInt(input[1]);
 
+# 자동 형변환 기대하지말고, 숫자는 parseInt() 꼭 해줘야함
