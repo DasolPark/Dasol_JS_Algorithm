@@ -49,3 +49,32 @@ console.log(DTwo);
 console.log(DThree);
 console.log(DFour);
 console.log(DFive + '\n');
+
+// Using while
+
+function EachDigitOfNumbers(n) {
+  const arr = [];
+  let digitCount = 0;
+  let number = n;
+
+  while (number > 0) {
+    arr[digitCount] = number % 10;
+    number = parseInt(number / 10);
+    digitCount++;
+  }
+
+  return arr;
+}
+
+// 54321
+// arr[0] = 1
+// 5432.1
+// arr[1] = 2
+// 543.2
+// arr[2] = 3
+// 54.3
+// arr[3] = 4
+// 5.4
+// arr[4] = 5
+
+console.log(EachDigitOfNumbers(54321));
