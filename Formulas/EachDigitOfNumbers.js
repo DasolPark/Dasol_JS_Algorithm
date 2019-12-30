@@ -78,3 +78,17 @@ function EachDigitOfNumbers(n) {
 // arr[4] = 5
 
 console.log(EachDigitOfNumbers(54321));
+console.log('\n');
+
+function EachDigitOfNumbersStr(n) {
+  n = n
+    .toString()
+    .split('')
+    .map(num => {
+      return parseInt(num);
+    });
+
+  return n;
+}
+
+console.log(EachDigitOfNumbersStr(54321));
