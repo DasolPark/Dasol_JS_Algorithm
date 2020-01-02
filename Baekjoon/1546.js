@@ -71,3 +71,23 @@ console.log(sumNewGrades / N);
 // }
 
 // console.log(result / grades.length);
+
+// 4th Solution(toFixed)
+
+// For submit
+
+// const fs = require('fs');
+// const input = fs.readFileSync('/dev/stdin').toString().trim().split('\n');
+
+// For local test
+// const input = ['3', '40 80 60'];
+// const N = parseInt(input[0]);
+// const scoreArr = input[1].split(' ').map(num => parseInt(num));
+// const maxScore = Math.max.apply(null, scoreArr);
+// let newAvgTotal = 0;
+
+// for (let i = 0; i < scoreArr.length; i++) {
+//   newAvgTotal += (scoreArr[i] / maxScore) * 100;
+// }
+
+// console.log((newAvgTotal / N).toFixed(2));

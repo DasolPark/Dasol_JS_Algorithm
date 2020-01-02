@@ -44,3 +44,33 @@ console.log(counter);
 // }
 
 // console.log(Object.keys(theRestMap).length);
+
+// 3rd Solution
+
+// For submit
+
+// const fs = require('fs');
+// const input = fs.readFileSync('/dev/stdin').toString().trim().split('\n');
+
+// For local test
+// const input = [
+//   '39',
+//   '40',
+//   '41',
+//   '42',
+//   '43',
+//   '44',
+//   '82',
+//   '83',
+//   '84',
+//   '85'
+// ].map(num => parseInt(num));
+// const charMap = {};
+
+// for (let i = 0; i < input.length; i++) {
+//   charMap[input[i] % 42] = charMap[input[i] % 42]
+//     ? charMap[input[i] % 42] + 1
+//     : 1;
+// }
+
+// console.log(Object.keys(charMap).length);
