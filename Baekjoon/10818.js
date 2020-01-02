@@ -1,10 +1,12 @@
 // 3rd Solution (reduce, minMax)
 
-const fs = require('fs');
-const input = fs
-  .readFileSync('/dev/stdin')
-  .toString()
-  .split('\n');
+// For submit
+
+// const fs = require('fs');
+// const input = fs.readFileSync('/dev/stdin').toString().split('\n');
+
+// For local test
+const input = ['5', '20 10 35 30 7'];
 const N = parseInt(input[0]);
 const resultMinMax = input[1].split(' ').reduce(
   (minMax, num) => {
@@ -43,7 +45,7 @@ console.log(resultMinMax.join(' '));
 
 // console.log(min + ' ' + max);
 
-// 1st Solution(Spread in VSC)
+// 1st Solution(Spread in VSC - not passed)
 
 // const input = ['5', '20 10 35 30 7'];
 // const N = parseInt(input[0]);
@@ -57,3 +59,44 @@ console.log(resultMinMax.join(' '));
 
 // console.log(numArr);
 // console.log(min + ' ' + max);
+
+// 4th Solution(reduce)
+
+// For submit
+
+// const fs = require('fs');
+// const input = fs.readFileSync('/dev/stdin').toString().trim().split('\n');
+
+// For local test
+// const input = ['5', '20 10 35 30 7'];
+// const N = parseInt(input[0]);
+// const numArr = input[1].split(' ').map(num => parseInt(num));
+// const max = numArr.reduce((a, b) => Math.max(a, b));
+// const min = numArr.reduce((a, b) => Math.min(a, b));
+
+// console.log(`${min} ${max}`);
+
+// 5th Solution
+
+// For submit
+
+// const fs = require('fs');
+// const input = fs.readFileSync('/dev/stdin').toString().trim().split('\n');
+
+// For local test
+// const input = ['5', '20 10 35 30 7'];
+// const N = parseInt(input[0]);
+// const numArr = input[1].split(' ').map(num => parseInt(num));
+// let max = numArr[0];
+// let min = numArr[0];
+
+// for (let i = 0; i < N; i++) {
+//   if (numArr[i] > max) {
+//     max = numArr[i];
+//   }
+//   if (numArr[i] < min) {
+//     min = numArr[i];
+//   }
+// }
+
+// console.log(`${min} ${max}`);

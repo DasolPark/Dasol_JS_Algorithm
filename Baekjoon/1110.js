@@ -1,3 +1,7 @@
+// 1st Solution
+
+// For submit
+
 // const fs = require('fs');
 // let newNum = fs.readFileSync('/dev/stdin').toString();
 let newNum = '26';
@@ -10,6 +14,51 @@ while (newNum !== ORIGIN || counter === 0) {
 }
 
 console.log(counter);
+
+// 2nd Solution(reduce, do ... while)
+
+// For submit
+
+// const fs = require('fs');
+// const input = fs.readFileSync('/dev/stdin').toString().trim();
+
+// For local test
+// const input = '26';
+// let newNum = parseInt(input);
+// let counter = 0;
+
+// do {
+//   newNum =
+//     (newNum % 10) * 10 +
+//     ((newNum
+//       .toString()
+//       .split('')
+//       .reduce((acc, num) => +acc + +num) %
+//       10) %
+//       10);
+//   counter++;
+// } while (parseInt(newNum) !== parseInt(input));
+
+// console.log(counter);
+
+// 3rd Solution(do ... while)
+
+// For submit
+
+// const fs = require('fs');
+// const input = fs.readFileSync('/dev/stdin').toString().trim();
+
+// For local test
+// const ORIGIN = '26';
+// let newNum = parseInt(ORIGIN);
+// let counter = 0;
+
+// do {
+//   newNum = (newNum % 10) * 10 + ((parseInt(newNum / 10) + (newNum % 10)) % 10);
+//   counter++;
+// } while (parseInt(newNum) !== parseInt(ORIGIN));
+
+// console.log(counter);
 
 // Timeout code
 
