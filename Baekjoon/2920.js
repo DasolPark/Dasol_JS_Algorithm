@@ -46,3 +46,24 @@ if (ascending === 7) {
 // } else {
 //   console.log('mixed');
 // }
+
+// 3rd Solution
+
+// For submit
+
+// const fs = require('fs');
+// const input = fs.readFileSync('/dev/stdin').toString().trim().split(' ');
+
+// For local test
+// const input = ['1', '2', '3', '4', '5', '6', '7', '8'];
+// const input = ['8', '7', '6', '5', '4', '3', '2', '1'];
+// const input = ['1', '3', '2', '4', '6', '5', '7', '8'];
+// const inputJoin = input.join('');
+
+// if (inputJoin === '12345678') {
+//   console.log('ascending');
+// } else if (inputJoin === '87654321') {
+//   console.log('descending');
+// } else {
+//   console.log('mixed');
+// }

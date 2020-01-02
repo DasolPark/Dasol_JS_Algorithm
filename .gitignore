@@ -3,7 +3,9 @@ testt.js
 
 # 10818.js (minMax - reduce) +
 # 1110.js (Plus cycle) +
-# Leap Year(BJ Q.2884) +
+# 2884.js (Leap Year) +
+# 2920.js (scale) +
+# 2577.js (The number of numbers) +
 GearIndexOf.js
 powerPlant.js
 targetNumber.js
