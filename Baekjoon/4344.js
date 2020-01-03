@@ -1,3 +1,5 @@
+// It'll be above average
+
 // 1st Solution
 
 // For submit
@@ -67,4 +69,42 @@ for (let i = 1; i <= C; i++) {
 //   );
 
 //   console.log(((e[i].length / b[i][0]) * 100).toFixed(3) + '%');
+// }
+
+// other solution(Good)
+
+// For submit
+
+// function toNumber(num) {
+//   return parseInt(num);
+// }
+// function add(a, b) {
+//   return a + b;
+// }
+// function over(n) {
+//   return function(a) {
+//     return a > n;
+//   };
+// }
+// const fs = require('fs');
+// const input = fs.readFileSync('/dev/stdin', 'utf8').split('\n');
+
+// For local test
+// const input = [
+//   '5',
+//   '5 50 50 70 80 100',
+//   '7 100 95 90 80 70 60 50',
+//   '3 70 90 80',
+//   '3 70 90 81',
+//   '9 100 99 98 97 96 95 94 93 91'
+// ];
+// const T = input[0];
+// for (let i = 1; i <= T; i++) {
+//   let scores = input[i]
+//     .split(' ')
+//     .slice(1)
+//     .map(toNumber);
+//   let avg = scores.reduce(add, 0) / scores.length;
+//   let percentage = (scores.filter(over(avg)).length / scores.length) * 100;
+//   console.log(percentage.toFixed(3) + '%');
 // }
