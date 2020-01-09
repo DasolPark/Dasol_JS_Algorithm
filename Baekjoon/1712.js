@@ -5,13 +5,13 @@
 // For submit
 
 // const fs = require('fs');
-// const input = fs.readFileSync('/dev/stdin').toString().trim().split(' ');
+// const input = fs.readFileSync('/dev/stdin').toString().trim().split(' ').map(num => parseInt(num));
 
 // For local test
-const input = ['1000', '70', '170'];
-const A = parseInt(input.shift());
-const B = parseInt(input.shift());
-const C = parseInt(input.shift());
+const input = ['1000', '70', '170'].map(num => parseInt(num));
+const A = input.shift();
+const B = input.shift();
+const C = input.shift();
 const netProfit = C - B;
 
 if (netProfit <= 0) {
