@@ -1,6 +1,6 @@
 // Sugar Delivery
 
-// 3rd Solution
+// 3rd Solution - Good
 
 // For submit
 
@@ -61,7 +61,7 @@ console.log(-1);
 //   console.log(-1);
 // }
 
-// 2nd(other solution)
+// 2nd(other solution) - Good
 
 // For submit
 
