@@ -1,11 +1,14 @@
 testt.js
 # https://www.acmicpc.net/problem/1102
 
-# 10818.js (minMax - reduce) +
-# 1110.js (Plus cycle) +
-# 2884.js (Leap Year) +
+# 2588.js (split method) ++
+# 2753.js (condition thingking) ++
+# 2884.js (condition thinking) +
+# 10817.js (condition thinking) ++
+# 1110.js (Plus cycle) ++
+# 10818.js (minMax - reduce) ++
+# 2577.js (The number of numbers) ++
 # 2920.js (scale) +
-# 2577.js (The number of numbers) +
 # 3052.js (The rest - idea) +
 # 4344.js (It'll be above average - practice new answer) +
 # 4673.js (Self Number - practice new answer) +
