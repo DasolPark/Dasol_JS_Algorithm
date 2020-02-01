@@ -8,9 +8,8 @@ testt.js
 # 1110.js (Plus cycle) ++
 # 10818.js (minMax - reduce) ++
 # 2577.js (The number of numbers) ++
+# 4344.js (It'll be above average - practice new answer) ++
 # 2920.js (scale) +
-# 3052.js (The rest - idea) +
-# 4344.js (It'll be above average - practice new answer) +
 # 4673.js (Self Number - practice new answer) +
 # 10809.js (Find alphabet - skill) +
 # 2941.js (Croatia alphabet - RegExp)
@@ -20,6 +19,7 @@ testt.js
 # 2292.js (Honey comb)
 # 2869.js (The snail wants to go up)
 # 2775.js (I'll be the president of the women's association) iam님이 푼 방식대로 풀어보기
+# 2798.js (Black Jack)
 
 powerPlant.js
 targetNumber.js
