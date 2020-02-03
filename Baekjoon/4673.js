@@ -1,29 +1,51 @@
 // Self Number
 
-// 3rd Solution
+// 4th Solution
+
+const n = 10000;
+const isSelfNum = new Array(n + 1);
+isSelfNum.fill(true);
 
 function d(n) {
-  let temp = n;
-  let sum = temp;
+  const N = n.toString().split('');
 
-  while (temp > 0) {
-    sum += temp % 10;
-    temp = parseInt(temp / 10);
-  }
-
-  return sum;
+  return n + N.reduce((acc, num) => (acc += +num), 0);
 }
 
-const N = 10000;
-const selfNumCheckArr = new Array(N);
-selfNumCheckArr.fill(false);
+for (let i = 1; i <= n; i++) {
+  isSelfNum[d(i)] = false;
+}
 
-for (let i = 1; i <= N; i++) {
-  selfNumCheckArr[d(i)] = true;
-  if (!selfNumCheckArr[i]) {
+for (let i = 1; i <= n; i++) {
+  if (isSelfNum[i]) {
     console.log(i);
   }
 }
+
+// 3rd Solution
+
+// function d(n) {
+//   let temp = n;
+//   let sum = temp;
+
+//   while (temp > 0) {
+//     sum += temp % 10;
+//     temp = parseInt(temp / 10);
+//   }
+
+//   return sum;
+// }
+
+// const N = 10000;
+// const selfNumCheckArr = new Array(N);
+// selfNumCheckArr.fill(false);
+
+// for (let i = 1; i <= N; i++) {
+//   selfNumCheckArr[d(i)] = true;
+//   if (!selfNumCheckArr[i]) {
+//     console.log(i);
+//   }
+// }
 
 // 1st solution
 
@@ -112,54 +134,5 @@ for (let i = 1; i <= N; i++) {
 // for (let i = 1; i <= N; i++) {
 //   if (arr[i] === 0) {
 //     console.log(i);
-//   }
-// }
-
-// other solution 1
-// let check = new Array(10001);
-// let result = '';
-
-// Array.prototype.sum = function() {
-//   return this.reduce((p, c) => {
-//     return parseInt(p) + parseInt(c);
-//   });
-// };
-
-// function d(n) {
-//   n = new String(n); // n = n.toString();
-//   return parseInt(n) + parseInt(n.split('').sum());
-// }
-
-// for (let i = 1; i <= 10000; i++) {
-//   check[d(i)] = true;
-// }
-
-// for (let i = 1; i <= 10000; i++) {
-//   if (check[i] === undefined) {
-//     result += new String(i) + '\n';
-//     // console.log(i);
-//   }
-// }
-
-// console.log(result.slice(0, result.length - 1));
-
-// other solution 2
-
-// var arr = new Array(10001);
-// //arr.fill(false);
-
-// for (var i = 1; i <= 10000; i++) {
-//   var tmp = i; // 123
-//   var sum = tmp; // 123
-//   while (tmp > 0) {
-//     sum += tmp % 10; // 3+2+1
-//     tmp = parseInt(tmp / 10); // 12, 1, 0
-//   }
-//   arr[sum] = true;
-// }
-
-// for (var j = 1; j <= 10000; j++) {
-//   if (!arr[j]) {
-//     console.log(j);
 //   }
 // }
