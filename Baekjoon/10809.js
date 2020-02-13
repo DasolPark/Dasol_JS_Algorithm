@@ -1,60 +1,30 @@
+// Find Alphabet
+
 // 2nd Solution
+
+// For submit
 
 // const fs = require('fs');
 // const input = fs.readFileSync('/dev/stdin').toString().trim();
 
+// For local test
 const input = 'baekjoon';
-const result = [];
+const arr = [];
 
-for (let i = 'a'.charCodeAt(0); i <= 'z'.charCodeAt(0); i++) {
-  result.push(input.indexOf(String.fromCharCode(i)));
+for (let i = 'a'.charCodeAt(); i <= 'z'.charCodeAt(); i++) {
+  console.log(input.indexOf(String.fromCharCode(i)));
 }
 
-console.log(result.join(' '));
-
-// 1st Solution(not so good)
+// 1st Solution
 
 // const fs = require('fs');
-// const input = fs.readFileSync('/dev/stdin').toString().trim().split('\n');
+// const input = fs.readFileSync('/dev/stdin').toString().trim();
 
-// const input = ['baekjoon'];
-// const checker = [
-//   'a',
-//   'b',
-//   'c',
-//   'd',
-//   'e',
-//   'f',
-//   'g',
-//   'h',
-//   'i',
-//   'j',
-//   'k',
-//   'l',
-//   'm',
-//   'n',
-//   'o',
-//   'p',
-//   'q',
-//   'r',
-//   's',
-//   't',
-//   'u',
-//   'v',
-//   'w',
-//   'x',
-//   'y',
-//   'z'
-// ];
-
+// const input = 'baekjoon';
 // const result = [];
 
-// for (let char of checker) {
-//   if (input[0].includes(char)) {
-//     result.push(input[0].indexOf(char));
-//   } else {
-//     result.push(-1);
-//   }
+// for (let i = 'a'.charCodeAt(0); i <= 'z'.charCodeAt(0); i++) {
+//   result.push(input.indexOf(String.fromCharCode(i)));
 // }
 
 // console.log(result.join(' '));
