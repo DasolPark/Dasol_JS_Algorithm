@@ -33,7 +33,7 @@ function quickSortStarter(arr) {
   if (!arr.length) {
     return arr;
   }
-  return quickSort(arr.slice(0), 0, arr.length - 1);
+  return quickSort(arr, 0, arr.length - 1);
 }
 
 function quickSort(array, l, r) {
