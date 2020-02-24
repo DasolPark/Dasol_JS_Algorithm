@@ -1,4 +1,4 @@
-// N and M (1) Permutation
+// N and M (2) Combination
 
 // For submit
 
@@ -6,31 +6,26 @@
 // const input = fs.readFileSync('/dev/stdin').toString().trim().split(' ').map(nm => parseInt(nm));
 
 // For local test
-const input = [4, 2];
+const input = [3, 1];
 const N = input.shift();
 const M = input.shift();
-
 const visited = new Array(N);
-let output = [];
+const output = [];
 
-function print() {
-  console.log(output.join(' '));
-}
-
-function dfs(cnt) {
+function dfs(idx, cnt) {
   if (cnt === M) {
-    print();
+    console.log(output.join(' '));
     return;
   }
 
-  for (let i = 0; i < N; i++) {
+  for (let i = idx; i < N; i++) {
     if (visited[i] === true) continue;
     visited[i] = true;
     output.push(i + 1);
-    dfs(cnt + 1);
+    dfs(i, cnt + 1);
     output.pop();
     visited[i] = false;
   }
 }
 
-dfs(0);
+dfs(0, 0);
