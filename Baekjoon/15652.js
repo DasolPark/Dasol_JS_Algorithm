@@ -1,4 +1,4 @@
-// N and M (3) Permutation of repetition
+// N and M (4) Combination of repetition
 
 // For submit
 
@@ -9,21 +9,22 @@
 const input = [3, 3];
 const N = input.shift();
 const M = input.shift();
+const visited = new Array(N);
 const output = [];
 let result = '';
 
-function dfs(cnt) {
+function dfs(idx, cnt) {
   if (cnt === M) {
     result += `${output.join(' ')}\n`;
     return;
   }
 
-  for (let i = 0; i < N; i++) {
+  for (let i = idx; i < N; i++) {
     output.push(i + 1);
-    dfs(output.length);
+    dfs(i, output.length);
     output.pop();
   }
 }
 
-dfs(0);
-console.log(result.trim());
+dfs(0, 0);
+console.log(result);
